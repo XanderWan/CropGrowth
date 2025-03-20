@@ -10,9 +10,22 @@
 		E24059702D8BAB8E001305E8 /* CropGrowth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropGrowth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E26F868F2D8BFCF300B5ED51 /* Exceptions for "CropGrowth" folder in "CropGrowth" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E240596F2D8BAB8E001305E8 /* CropGrowth */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E24059722D8BAB8E001305E8 /* CropGrowth */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E26F868F2D8BFCF300B5ED51 /* Exceptions for "CropGrowth" folder in "CropGrowth" target */,
+			);
 			path = CropGrowth;
 			sourceTree = "<group>";
 		};
@@ -255,6 +268,8 @@
 				DEVELOPMENT_TEAM = 5373QSAU3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CropGrowth/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to check the local weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +299,8 @@
 				DEVELOPMENT_TEAM = 5373QSAU3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CropGrowth/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to check the local weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,18 +1,19 @@
-//
-//  HomeView.swift
-//  CropGrowth
-//
-//  Created by Xander Wanagel on 3/20/25.
-//
-
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var locationManager: LocationManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if let location = locationManager.currentLocation {
+            Text("Location: \(location.latitude), \(location.longitude)")
+        } else {
+            Text("Fetching location...")
+        }
     }
 }
 
 #Preview {
     HomeView()
+        .environmentObject(LocationManager())
 }
